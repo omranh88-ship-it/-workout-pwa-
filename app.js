@@ -1,5 +1,268 @@
 /* ====== תכנית אימון (ערוך כאן לפי התכנית שלך) ====== */
-const PROGRAM = [
+const PROGRAM = [const PROGRAM = [
+  {
+    id: "day_a",
+    name: "יום א - גב + כתף אחורית",
+    description: "חימום, תרגילי גב וכתף אחורית, ליבה, קארדיו ומתיחות.",
+    exercises: [
+      {
+        name: "Lat Pulldown",
+        tags: ["גב"],
+        video: "https://www.youtube.com/results?search_query=lat+pulldown+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Seated Cable Row (V-grip)",
+        tags: ["גב"],
+        video: "https://www.youtube.com/results?search_query=seated+cable+row+v+grip+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Face Pull",
+        tags: ["כתף אחורית"],
+        video: "https://www.youtube.com/results?search_query=face+pull+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      },
+      {
+        name: "Reverse Fly",
+        tags: ["כתף אחורית"],
+        video: "https://www.youtube.com/results?search_query=reverse+fly+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Pull-Over",
+        tags: ["גב"],
+        video: "https://www.youtube.com/results?search_query=dumbbell+pullover+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Shrugs",
+        tags: ["טרפזים"],
+        video: "https://www.youtube.com/results?search_query=dumbbell+shrugs+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Plank",
+        tags: ["ליבה"],
+        video: "https://www.youtube.com/results?search_query=plank+proper+form",
+        notes: "",
+        sets: [{ targetReps: "45 שנ׳", targetWeight: "" }, { targetReps: "45 שנ׳", targetWeight: "" }, { targetReps: "45 שנ׳", targetWeight: "" }]
+      },
+      {
+        name: "Side Plank",
+        tags: ["ליבה"],
+        video: "https://www.youtube.com/results?search_query=side+plank+proper+form",
+        notes: "",
+        sets: [{ targetReps: "30 שנ׳", targetWeight: "" }, { targetReps: "30 שנ׳", targetWeight: "" }, { targetReps: "30 שנ׳", targetWeight: "" }]
+      },
+      {
+        name: "קארדיו - הליכה מהירה",
+        tags: ["קארדיו"],
+        video: "https://www.youtube.com/results?search_query=brisk+walking+cardio",
+        notes: "",
+        sets: [{ targetReps: "20-30 דק׳", targetWeight: "" }]
+      },
+      {
+        name: "מתיחות - Hamstring, Lat",
+        tags: ["מתיחות"],
+        video: "https://www.youtube.com/results?search_query=hamstring+stretch+lat+stretch",
+        notes: "",
+        sets: [{ targetReps: "5-8 דק׳", targetWeight: "" }]
+      }
+    ]
+  },
+
+  {
+    id: "day_b",
+    name: "יום ב - חזה + כתפיים + טרייספס",
+    description: "דחיפה: חזה, כתפיים, יד אחורית + ליבה, קארדיו ומתיחות.",
+    exercises: [
+      {
+        name: "Incline Barbell Press",
+        tags: ["חזה"],
+        video: "https://www.youtube.com/results?search_query=incline+barbell+press+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Dumbbell Fly",
+        tags: ["חזה"],
+        video: "https://www.youtube.com/results?search_query=dumbbell+fly+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Chest Press Machine / Flat Dumbbell Press",
+        tags: ["חזה"],
+        video: "https://www.youtube.com/results?search_query=machine+chest+press+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Lateral Raises",
+        tags: ["כתפיים"],
+        video: "https://www.youtube.com/results?search_query=lateral+raise+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Front Raises",
+        tags: ["כתפיים"],
+        video: "https://www.youtube.com/results?search_query=front+raise+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Shoulder Press",
+        tags: ["כתפיים"],
+        video: "https://www.youtube.com/results?search_query=shoulder+press+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Rope Pushdown",
+        tags: ["טרייספס"],
+        video: "https://www.youtube.com/results?search_query=tricep+rope+pushdown+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Overhead Cable Extension",
+        tags: ["טרייספס"],
+        video: "https://www.youtube.com/results?search_query=overhead+cable+tricep+extension+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Cable Crunch",
+        tags: ["בטן"],
+        video: "https://www.youtube.com/results?search_query=cable+crunch+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      },
+      {
+        name: "קארדיו",
+        tags: ["קארדיו"],
+        video: "https://www.youtube.com/results?search_query=cardio+machine+workout+20+minutes",
+        notes: "20-25 דקות לפי הדופק.",
+        sets: [{ targetReps: "20-25 דק׳", targetWeight: "" }]
+      },
+      {
+        name: "מתיחות - Chest, Shoulder, Lat",
+        tags: ["מתיחות"],
+        video: "https://www.youtube.com/results?search_query=chest+stretch+shoulder+stretch+lat+stretch",
+        notes: "",
+        sets: [{ targetReps: "5-8 דק׳", targetWeight: "" }]
+      }
+    ]
+  },
+
+  {
+    id: "rest",
+    name: "יום מנוחה",
+    description: "התאוששות. ניתן לבצע הליכה קלה ומתיחות לפי צורך.",
+    exercises: [
+      {
+        name: "הליכה קלה (אופציונלי)",
+        tags: ["התאוששות"],
+        video: "https://www.youtube.com/results?search_query=easy+walk+recovery",
+        notes: "",
+        sets: [{ targetReps: "15-30 דק׳", targetWeight: "" }]
+      },
+      {
+        name: "מתיחות קלות (אופציונלי)",
+        tags: ["מתיחות"],
+        video: "https://www.youtube.com/results?search_query=full+body+stretch+routine+recovery",
+        notes: "",
+        sets: [{ targetReps: "5-10 דק׳", targetWeight: "" }]
+      }
+    ]
+  },
+
+  {
+    id: "day_c",
+    name: "יום שישי - רגליים + חזה + בטן",
+    description: "אינטרוולים, מתיחות, רגליים, חזה, ליבה.",
+    exercises: [
+      {
+        name: "אינטרוולים - 8 סבבים",
+        tags: ["חימום", "קארדיו"],
+        video: "https://www.youtube.com/results?search_query=interval+training+90+seconds+30+seconds",
+        notes: "לפי התמונה: 8 סבבים של 90 שנ׳ בינוני + 30 שנ׳ מהיר.",
+        sets: [{ targetReps: "8 סבבים", targetWeight: "" }]
+      },
+      {
+        name: "מתיחות - Biceps, Lat, Hamstring",
+        tags: ["מתיחות"],
+        video: "https://www.youtube.com/results?search_query=biceps+stretch+lat+stretch+hamstring+stretch",
+        notes: "",
+        sets: [{ targetReps: "5-8 דק׳", targetWeight: "" }]
+      },
+      {
+        name: "Goblet Squat",
+        tags: ["רגליים"],
+        video: "https://www.youtube.com/results?search_query=goblet+squat+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Bulgarian Split Squat",
+        tags: ["רגליים"],
+        video: "https://www.youtube.com/results?search_query=bulgarian+split+squat+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Incline Dumbbell Press",
+        tags: ["חזה"],
+        video: "https://www.youtube.com/results?search_query=incline+dumbbell+press+proper+form",
+        notes: "",
+        sets: [{ targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }, { targetReps: "12", targetWeight: "" }]
+      },
+      {
+        name: "Cable Crossover",
+        tags: ["חזה"],
+        video: "https://www.youtube.com/results?search_query=cable+crossover+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      },
+      {
+        name: "Leg Extension",
+        tags: ["רגליים"],
+        video: "https://www.youtube.com/results?search_query=leg+extension+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      },
+      {
+        name: "Leg Curl",
+        tags: ["רגליים"],
+        video: "https://www.youtube.com/results?search_query=leg+curl+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      },
+      {
+        name: "Side Plank",
+        tags: ["ליבה"],
+        video: "https://www.youtube.com/results?search_query=side+plank+proper+form",
+        notes: "",
+        sets: [{ targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }, { targetReps: "10", targetWeight: "" }]
+      },
+      {
+        name: "Russian Twist",
+        tags: ["בטן"],
+        video: "https://www.youtube.com/results?search_query=russian+twist+proper+form",
+        notes: "",
+        sets: [{ targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }, { targetReps: "15", targetWeight: "" }]
+      }
+    ]
+  }
+];
   {
     id: "day1",
     name: "יום 1 - פלג עליון",
